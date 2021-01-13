@@ -15,7 +15,7 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle"
 
 group = "com.github.dcoraboeuf.minecraft"
-version = "1.0-SNAPSHOT"
+version = project.properties.version
 archivesBaseName = "${modid}"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
