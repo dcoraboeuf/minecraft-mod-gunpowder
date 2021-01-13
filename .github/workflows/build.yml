@@ -1,4 +1,4 @@
-name: JAR
+name: Build
 
 on:
   push:
@@ -24,6 +24,7 @@ jobs:
     - name: JAR artifact
       uses: actions/upload-artifact@v2
       with:
+        name: gunpowder-recipe.jar
         path: build/libs/*.jar
         if-no-files-found: error
         
