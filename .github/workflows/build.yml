@@ -24,7 +24,7 @@ jobs:
     - name: JAR artifact
       uses: actions/upload-artifact@v2
       with:
-        name: gunpowder-recipe.jar
-        path: build/libs/*.jar
+        name: gunpowder-recipe${{ github.ref }}-${{ github.sha }}.jar
+        path: build/libs/gunpowder-recipe-${{ github.ref }}-${{ github.sha }}.jar
         if-no-files-found: error
         
